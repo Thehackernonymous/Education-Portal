@@ -2,21 +2,37 @@
     display: flex;
   }
  
-  .sidebar {
-    width: 300px;
-    height: 1550px;
-    background-color: #c5c8c9;
-    padding: 20px;
-    
-  }
- 
-  .search-bar {
-    margin: 10px;
+/* Main.css */
+body {
+  margin: 0;
+  padding: 0;
 }
-  
-  .state-item{
-    cursor: pointer;
-  }
+
+.navbar {
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.search-bar {
+  padding: 10px;
+}
+
+.state-list {
+  overflow-y: auto; /* Enable scrolling if the state list is too long */
+  max-height: calc(100vh - 100px); /* Adjust the height as needed */
+  border: 2px solid red;
+}
+
+.state-item {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.state-item:hover {
+  background-color: burlywood;
+}
+
   
   .content {
     flex: 1;

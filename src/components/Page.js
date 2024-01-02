@@ -25,9 +25,9 @@ const Page = ({ selectedState }) => {
       ) : (
         <div>
           <h2 style={{ color: "red" }}>Indian Universities</h2>
-        <h3>
-          "Indian Education Portal"
-        </h3>
+          <h3>
+            "Indian Education Portal"
+          </h3>
           <div>
             {/* Allahabad */}
             <div className="card text-bg-dark">
@@ -90,31 +90,31 @@ const Page = ({ selectedState }) => {
               </div>
             </div>
             <div class="media-section">
-        <label>Media Section</label>
-        <div class="iframe-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/iSoIfrZ99BQ?si=VV6DWEL6RC5sO4Qi"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+              <label>Media Section</label>
+              <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iSoIfrZ99BQ?si=VV6DWEL6RC5sO4Qi"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
 
-          <iframe width="500" height="315" src="https://www.youtube.com/embed/2qlXw55EvWk?si=mPAV8n1TTxmRsiJm"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/2qlXw55EvWk?si=mPAV8n1TTxmRsiJm"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
 
-          <iframe width="500" height="315" src="https://www.youtube.com/embed/2qlXw55EvWk?si=mPAV8n1TTxmRsiJm"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X9Zx6zI9lz8?si=AwXhTHalwaaeQkWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-          <iframe width="500" height="315" src="https://www.youtube.com/embed/2qlXw55EvWk?si=mPAV8n1TTxmRsiJm"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-        </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BUPH1T5Ap8g?si=tJx7Kc4pba4EfBw7" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tUc1_sAjxVE?si=mixYq_1UfdUpwWum" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+
           </div>
-          
+
         </div>
       )}
     </>

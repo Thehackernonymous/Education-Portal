@@ -16,15 +16,17 @@
     margin-bottom: 10px;
   }
   
-  /* Style the iframes container to display them side by side */
   .iframe-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
+    max-width: 200%; /* Set the maximum width as needed */
+    height: 200px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent iframes from wrapping onto new lines */
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
   }
   
-  /* Style individual iframes */
-  .iframe-container iframe {
-    margin-right: 10px;
-    /* Adjust the spacing between iframes */
+  /* Add any additional styles for the iframes as needed */
+  iframe {
+    width: auto; /* Allow the iframes to have their natural width */
+    height: 100%; /* Make the iframes fill the container vertically */
+    margin-right: 10px; /* Optional: Add some spacing between iframes */
   }

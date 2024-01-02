@@ -3,6 +3,10 @@ import './Main.css';
 
 const Sidebar = ({ setSelectedState }) => {
     const [searchQuery, setSearchQuery] = useState('');
+
+
+// const Sidebar = ({ setSelectedUniversity }) => {
+//   const [searchQuery, setSearchQuery] = useState('');
     
     const states = [
         { id:1, name: 'Andhra Pradesh' },
@@ -33,8 +37,38 @@ const Sidebar = ({ setSelectedState }) => {
         { id:26, name: 'Uttarakhand' },
         { id:27, name: 'Uttar Pradesh' },
         { id:28, name: 'West Bengal' }
-
     ];
+
+  //   const universities = [
+  //     { id:1, name: 'Andhra Pradesh' },
+  //     { id:2, name: 'Arunachal Pradesh' },
+  //     { id:3, name: 'Assam' },
+  //     { id:4, name: 'Bihar' },
+  //     { id:5, name: 'Chattisgarh' },
+  //     { id:6, name: 'Goa' },
+  //     { id:7, name: 'Gujarat' },
+  //     { id:8, name: 'Haryana' },
+  //     { id:9, name: 'Himachal Pradesh' },
+  //     { id:10, name: 'Jharkhand' },
+  //     { id:11, name: 'Karnataka' },
+  //     { id:12, name: 'Kerala' },
+  //     { id:13, name: 'Madhya Pradesh' },
+  //     { id:14, name: 'Maharashtra' },
+  //     { id:15, name: 'Manipur' },
+  //     { id:16, name: 'Meghalaya' },
+  //     { id:17, name: 'Mizoram' },
+  //     { id:18, name: 'Nagaland' },
+  //     { id:19, name: 'Odisha' },
+  //     { id:20, name: 'Punjab' },
+  //     { id:21, name: 'Rajasthan' },
+  //     { id:22, name: 'Sikkim' },
+  //     { id:23, name: 'Tamil Nadu' },
+  //     { id:24, name: 'Telangana' },
+  //     { id:25, name: 'Tripura' },
+  //     { id:26, name: 'Uttarakhand' },
+  //     { id:27, name: 'Uttar Pradesh' },
+  //     { id:28, name: 'West Bengal' }
+  // ];
 
     const filteredStates = states.filter((state) =>
     state.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -44,6 +78,14 @@ const Sidebar = ({ setSelectedState }) => {
     setSelectedState(state);
     // Implement the logic to display state information
   };
+//   const filteredUniversities = universities.filter((university) =>
+//   state.name.toLowerCase().includes(searchQuery.toLowerCase())
+// );
+
+// const showUniversityInfo = (university) => {
+//   setSelectedUniversity(university);
+//   // Implement the logic to display state information
+// };
 
   return (
     <>
@@ -70,6 +112,29 @@ const Sidebar = ({ setSelectedState }) => {
           </div>
         ))}
       </div>
+      {/* <nav>
+      <div className="container-fluid">
+          <a className="navbar-brand" href="/">
+            <span style={{ margin: '0 20px' }}>|</span>
+            Indian Universities
+          </a>
+        </div>
+      </nav>
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search universities..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
+      <div className="university-list">
+        {filteredUniversities.map((university) => (
+          <div key={university.id} className="university-item" onClick={() => showUniversityInfo(university)}>
+            <h2>{university.name}</h2>
+          </div>
+        ))}
+      </div> */}
     </>
   );
 };
