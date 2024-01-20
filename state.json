@@ -1,0 +1,19 @@
+
+{
+    "mappings": {
+      "properties": {
+        "state_name": {
+          "type": "text"
+        },
+        "universities": {
+          "type": "nested",
+          "properties": {
+            "university_name": {
+              "type": "text"
+            }
+          }
+        }
+      }
+    }
+  }
+  

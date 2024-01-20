@@ -1,4 +1,73 @@
 img {
     padding: 5px;
     margin: 10px;
+    /* width: 500px; */
 }
+
+/* Carousel.css */
+
+.carousel {
+    max-width: 100%;
+  }
+  
+  .carousel-inner {
+    border-radius: 8px;
+  }
+  
+  .carousel-item {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .carousel-control-prev-icon:before, .carousel-control-next-icon:before {
+    content: '';
+    border-width: 2px;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .carousel-control-prev {
+    margin-left: -2%;
+  }
+  
+  .carousel-control-next {
+    margin-right: -2%;
+  }
+  
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-item img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-container {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .card {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+  }
+
+  
+  

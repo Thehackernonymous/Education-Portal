@@ -1,32 +1,38 @@
-.card {
-    width: 48%;
-    margin: 5px;
-    display: inline-block;
-  } 
-  
-  .media-section {
-    margin-top: 20px;
+  .card-container {
+    display: flex;
+   
   }
   
-  /* Style the label */
-  .media-section label {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  .card {
+    border: 1px solid #ddd;
+    /* padding: 10px; */
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    
+    display: flex;
+    flex-wrap: wrap;
   }
   
-  .iframe-container {
-    max-width: 200%; /* Set the maximum width as needed */
-    height: 200px;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent iframes from wrapping onto new lines */
-    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+  .card:hover {
+    transform: scale(1.05);
   }
   
-  /* Add any additional styles for the iframes as needed */
-  iframe {
-    width: auto; /* Allow the iframes to have their natural width */
-    height: 100%; /* Make the iframes fill the container vertically */
-    margin-right: 10px; /* Optional: Add some spacing between iframes */
+  .card.selected {
+    background-color: #007bff;
+    color: #fff;
   }
+  
+  .card:nth-child(4) {
+    background-color: #28a745; 
+    color: #fff; 
+  }
+  
+  .links {
+   width: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 5px;
+  }
+  
+

@@ -1,26 +1,9 @@
 .main {
     display: flex;
   }
- 
-/* Main.css */
-body {
-  margin: 0;
-  padding: 0;
-}
 
-.navbar {
-  padding: 10px;
-  background-color: #f0f0f0;
-}
-
-.search-bar {
-  padding: 10px;
-}
-
-.state-list {
-  overflow-y: auto; /* Enable scrolling if the state list is too long */
-  max-height: calc(100vh - 100px); /* Adjust the height as needed */
-  border: 2px solid red;
+.container {
+  height: 250vh;
 }
 
 .state-item {
@@ -33,16 +16,14 @@ body {
   background-color: burlywood;
 }
 
-  
   .content {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust the gap between cards */
+    gap: 20px; 
     padding: 20px;
   }
   
-  /* Add styles for the header in Page component */
   .content h2 {
     color: red;
   }
@@ -51,9 +32,8 @@ body {
     line-height: 1.5;
   }
   
-  /* Styles for cards in Page component */
   .card {
-    flex: 0 1 calc(50% - 20px); /* Adjust card size to have two cards in one row */
+    flex: 0 1 calc(50% - 20px); 
     margin-bottom: 20px;
   }
   
@@ -62,3 +42,67 @@ body {
     height: auto;
     border-radius: 8px;
   }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    min-height: 100vh;
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .navbar {
+    padding: 1rem;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .search-bar {
+    padding: 1rem;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .state-list {
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
+  .state-item {
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .state-item:hover {
+    background-color: #495057;
+  }
+  
+  .state-item h2 {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+  

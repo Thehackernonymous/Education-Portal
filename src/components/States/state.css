@@ -1,0 +1,32 @@
+/* state.css */
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.card:nth-child(4) {
+  background-color: #28a745; 
+  color: #fff; 
+}
+
+.university-container {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,12 +1,11 @@
 import React from 'react';
 
 const MediaSection = () => {
-  // Your media section component logic goes here
   return (
     <div className="media-section">
       <label>Media Section</label>
       <div className="iframe-container">
-        {/* Iframe content */}
+      
         <iframe width="560" height="315" src="https://www.youtube.com/embed/iSoIfrZ99BQ?si=VV6DWEL6RC5sO4Qi"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,59 +1,64 @@
-// import React, { useState, useEffect } from 'react';
-// // import { Client } from '@elastic/elasticsearch';
+import React, { useState, useEffect } from 'react';
+import { Client } from '@elastic/elasticsearch';
+import { useHistory } from 'react-router-dom';
 
-// // const esClient = new Client({ node: 'http://localhost:9200' }); // Replace with your Elasticsearch host
-// const index = 'universities'; // Replace with your Elasticsearch index
+const esClient = new Client({ node: 'http://localhost:9200' });
+const index = 'universities';
 
-// const SearchBar = () => {
-//   const [searchQuery, setSearchQuery] = useState('');
-//   const [searchResults, setSearchResults] = useState([]);
+const SearchBar = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const history = useHistory();
 
-//   useEffect(() => {
-//     const searchUniversities = async () => {
-//       try {
-//         const { body } = await esClient.search({
-//           index,
-//           body: {
-//             query: {
-//               match: {
-//                 university_name: searchQuery,
-//               },
-//             },
-//           },
-//         });
+  useEffect(() => {
+    const searchUniversities = async () => {
+      try {
+        if (!searchQuery.trim()) {
+          setSearchResults([]);
+          return;
+        }
 
-//         setSearchResults(body.hits.hits.map(hit => hit._source));
-//       } catch (error) {
-//         console.error('Error searching universities:', error);
-//       }
-//     };
+        const { body } = await esClient.search({
+          index,
+          body: {
+            query: {
+              match: {
+                university_name: searchQuery,
+              },
+            },
+          },
+        });
 
-//     // Perform the search when the searchQuery changes
-//     searchUniversities();
-//   }, [searchQuery]);
+        setSearchResults(body.hits.hits.map(hit => hit._source));
+      } catch (error) {
+        console.error('Error searching universities:', error);
+      }
+    };
 
-//   const redirectToUniversityWebsite = (university) => {
-//     // Implement redirection logic to the university's website
-//     window.location.href = university.website;
-//   };
+    searchUniversities();
+  }, [searchQuery]);
 
-//   return (
-//     <div>
-//       <input
-//         type="text"
-//         placeholder="Search universities..."
-//         value={searchQuery}
-//         onChange={(e) => setSearchQuery(e.target.value)}
-//       />
-//       <ul>
-//         {searchResults.map((university) => (
-//           <li key={university.id} onClick={() => redirectToUniversityWebsite(university)}>
-//             {university.university_name}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
+  const redirectToUniversityWebsite = (university) => {
+    history.push(`/university/${university.id}`);
+  };
 
-// export default SearchBar;
+  return (
+    <div>
+      <input
+        type="text"
+        placeholder="Search universities..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+      <ul>
+        {searchResults.map((university) => (
+          <li key={university.id} onClick={() => redirectToUniversityWebsite(university)}>
+            {university.university_name}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default SearchBar;
