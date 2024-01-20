@@ -28,6 +28,7 @@ const Page = ({ selectedState }) => {
           <h3>
             "Indian Education Portal"
           </h3>
+          <h2>EduConnect India: Empowering Minds, Transforming Futures</h2>
           <div>
             {/* Allahabad */}
             <div className="card text-bg-dark">
