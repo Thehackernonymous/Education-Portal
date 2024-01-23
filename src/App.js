@@ -13,7 +13,7 @@ import Page from './components/Page';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/education-portal'>
       <div className="App">
         <Header />
         <Routes>
