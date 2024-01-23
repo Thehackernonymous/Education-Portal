@@ -20,10 +20,10 @@ const Header = ({ setSearchQuery, openMediaModal, states }) => {
        <nav className="nav">
   <ul className="nav-list">
     <li className="nav-item">
-      <a href="/">Home</a>
+      <a href="/education-portal">Home</a>
     </li>
     <li className="nav-item media-btn">
-      <a href="/Media">Media Section</a>
+      <a href="/education-portal/Media">Media Section</a>
       
     </li>
   </ul>
