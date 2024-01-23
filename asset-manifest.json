@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/education-portal%3E/static/css/main.5b9038d1.css",
-    "main.js": "/education-portal%3E/static/js/main.88dbf066.js",
+    "main.js": "/education-portal%3E/static/js/main.c967715c.js",
     "static/js/787.d0e0a972.chunk.js": "/education-portal%3E/static/js/787.d0e0a972.chunk.js",
     "index.html": "/education-portal%3E/index.html",
     "main.5b9038d1.css.map": "/education-portal%3E/static/css/main.5b9038d1.css.map",
-    "main.88dbf066.js.map": "/education-portal%3E/static/js/main.88dbf066.js.map",
+    "main.c967715c.js.map": "/education-portal%3E/static/js/main.c967715c.js.map",
     "787.d0e0a972.chunk.js.map": "/education-portal%3E/static/js/787.d0e0a972.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b9038d1.css",
-    "static/js/main.88dbf066.js"
+    "static/js/main.c967715c.js"
   ]
 }
