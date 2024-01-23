@@ -34,9 +34,13 @@ const Sidebar = ({ setSelectedState }) => {
         { id:27, name: 'UttarPradesh' },
         { id:28, name: 'WestBengal' }
     ];
+//includes is used to filter search based on the alphabet it contains
+  //   const filteredStates = states.filter((state) =>
+  //   state.name.toLowerCase().includes(searchQuery.toLowerCase())
+  // );
 
-    const filteredStates = states.filter((state) =>
-    state.name.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredStates = states.filter((state) =>
+    state.name.toLowerCase().startsWith(searchQuery.toLowerCase())
   );
 
   const showStateInfo = (state) => {
@@ -72,3 +76,6 @@ const Sidebar = ({ setSelectedState }) => {
   );
 };
 export default Sidebar;
+
+
+  

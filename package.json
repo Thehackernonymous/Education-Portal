@@ -1,9 +1,8 @@
-{
-  "homepage": "https://Thehackernonymous.github.io/education-portal",
-  "name": "indian-education",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
+{   "homepage": "https://Thehackernonymous.github.io/education-portal",
+    "name": "indian-education",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
     "@appbaseio/reactivesearch": "^4.2.2",
     "@elastic/elasticsearch": "^8.11.0",
     "@testing-library/jest-dom": "^5.17.0",
