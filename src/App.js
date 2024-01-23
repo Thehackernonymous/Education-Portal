@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/education-portal" element={<Page />} />
+          <Route path="/education-portal" element={<Education />} />
           <Route path="/education-portal/Media" element={<Media/>} />
         </Routes>
         <Carousel />
