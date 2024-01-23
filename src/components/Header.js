@@ -12,21 +12,23 @@ const Header = ({ setSearchQuery, openMediaModal, states }) => {
   return (
     <header style={headerStyle}>
       <div style={containerStyle}>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg"
-          alt="Government of India"
-          style={logoStyle}
-        />
-       <nav className="nav">
-  <ul className="nav-list">
-    <li className="nav-item">
-      <a href="/Education">Home</a>
-    </li>
-    <li className="nav-item media-btn">
-      <a href="/Media">Media Section</a>
-    </li>
-  </ul>
-</nav>
+        <Link to="/Education" style={logoStyle}>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_of_India_logo.svg"
+            alt="Government of India"
+            style={{ height: '60px' }}
+          />
+        </Link>
+        <nav className="nav">
+          <ul className="nav-list">
+            <li className="nav-item">
+              <Link to="/Education">Home</Link>
+            </li>
+            <li className="nav-item media-btn">
+              <Link to="/Media">Media Section</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
