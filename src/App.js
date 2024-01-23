@@ -18,7 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Education />} />
-          <Route path="/media" element={<Media/>} />
+          <Route path="/Media" element={<Media/>} />
         </Routes>
         <Carousel />
         <Main />
