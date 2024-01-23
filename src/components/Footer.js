@@ -8,7 +8,7 @@ const Footer = () => {
       <div class="footer-col">
         <h4>Info</h4>
         <ul class="links">
-          <li><a href="/education-page">Education</a></li>
+          <li><a href="/education">Education</a></li>
         </ul>
       </div>
 
