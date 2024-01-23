@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 import Education from './Education';
 import './Main.css';
 import Page from './Page';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   const [selectedState, setSelectedState] = useState(null);
