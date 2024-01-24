@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Media from './Media';
+import Page from './Page';
 import './Header.css';
 
 const Header = ({ setSearchQuery, openMediaModal, states }) => {
@@ -20,7 +22,7 @@ const Header = ({ setSearchQuery, openMediaModal, states }) => {
        <nav className="nav">
   <ul className="nav-list">
     <li className="nav-item">
-      <a href="/education-portal">Home</a>
+      <a hr ref="/education-portal">Home</a>
     </li>
     <li className="nav-item media-btn">
       <a href="/education-portal/Media">Media Section</a>
