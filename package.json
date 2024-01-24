@@ -1,5 +1,4 @@
-{   "homepage": "https://Thehackernonymous.github.io/education-portal",
-    "name": "indian-education",
+{   "name": "indian-education",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
